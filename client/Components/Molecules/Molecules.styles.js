@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   // eclipse
@@ -7,27 +7,30 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '30%',
   },
+
   eclipse: {
     backgroundColor: '#A21D21',
     borderBottomLeftRadius: 200,
     height: '100%',
     left: '30%',
     position: 'absolute',
-    transform: [{scaleX: 2}],
+    transform: [{ scaleX: 2 }],
     width: '100%',
   },
 
-  stdTextContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
-    height: '100%',
+  logoContainer: {
+    display: 'flex',
+    height: '40%',
     width: '100%',
   },
-  stdWhiteB: {
-    color: '#f6f6f6',
-    fontSize: 18,
-    fontWeight: 'bold',
+
+  logo: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#252525',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   // eclipse
 
