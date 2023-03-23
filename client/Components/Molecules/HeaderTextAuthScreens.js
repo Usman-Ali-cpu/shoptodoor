@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Styles/Molecules.styles';
 import {View, Text} from 'react-native';
+import PropTypes from 'prop-types';
 
 import AuthScreenLines from '../Atoms/AuthScreenLines';
 
@@ -22,7 +23,7 @@ const HeaderTextAuthScreens = ({stepNo}) => {
 };
 
 HeaderTextAuthScreens.propTypes = {
-  stepNo: Number,
+  stepNo: PropTypes.number,
 };
 
 export default HeaderTextAuthScreens;

@@ -1,5 +1,8 @@
 import {StyleSheet} from 'react-native';
 
+/**
+ * @return {Object} styles, an object containing the styles for the welcome screen
+ */
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',

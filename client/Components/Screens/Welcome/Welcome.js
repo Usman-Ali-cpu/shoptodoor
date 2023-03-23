@@ -1,16 +1,19 @@
 import React from 'react';
-
 import {View, Text} from 'react-native';
+import PropTypes from 'prop-types';
 
 import STDButton from '../../Atoms/STDButton';
 import EclipseDropper from '../../Molecules/EclipseDropper';
-
-import styles from './Welcome.styles';
+import styles from './Styles/Welcome.styles';
 
 const welcomeText =
   'Welcome to our official app, why wait? Start shopping now and experience the convenience of Shop to Door';
-const welcomeTextBold = "Let's get started";
+const welcomeTextBold = 'Let\'s get started';
 
+/**
+ * @param {Object} navigation
+ * @return {JSX.Element} Welcome, a component that renders the welcome screen
+ */
 const Welcome = ({navigation}) => {
   return (
     <View style={[styles.container]}>
@@ -35,6 +38,10 @@ const Welcome = ({navigation}) => {
       </View>
     </View>
   );
+};
+
+Welcome.propTypes = {
+  navigation: PropTypes.object || PropTypes.func || PropTypes.any,
 };
 
 export default Welcome;
