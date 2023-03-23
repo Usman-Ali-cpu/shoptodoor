@@ -1,5 +1,8 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
+/**
+ * @return {Object} styles, an object containing the styles for the molecules
+ */
 const styles = StyleSheet.create({
   // eclipse
   eclipseContainer: {
@@ -14,21 +17,21 @@ const styles = StyleSheet.create({
     height: '100%',
     left: '30%',
     position: 'absolute',
-    transform: [{ scaleX: 2 }],
+    transform: [{scaleX: 2}],
     width: '100%',
   },
 
   logoContainer: {
-    display: 'flex',
-    height: '40%',
+    alignItems: 'center',
+    height: '100%',
+    justifyContent: 'center',
+    position: 'absolute',
     width: '100%',
   },
 
   logo: {
-    width: '100%',
-    height: '100%',
-    backgroundColor: '#252525',
-    display: 'flex',
+    height: 100,
+    width: 120,
     alignItems: 'center',
     justifyContent: 'center',
   },

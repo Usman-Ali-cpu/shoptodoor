@@ -62,3 +62,14 @@ buck-out/
 # Ruby / CocoaPods
 /ios/Pods/
 /vendor/bundle/
+
+# ignore .DS_Store files everywhere
+**/.DS_Store
+
+# ignore .env files everywhere
+**/.env
+
+# ignore .env files everywhere
+**/.env.local
+
+
