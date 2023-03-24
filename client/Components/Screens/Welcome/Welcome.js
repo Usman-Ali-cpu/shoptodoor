@@ -3,7 +3,7 @@ import {View, Text} from 'react-native';
 import PropTypes from 'prop-types';
 
 import STDButton from '../../Atoms/STDButton';
-import EclipseDropper from '../../Molecules/EclipseDropper';
+import EclipseDropper from '../../Molecules/EclipseDropperWithLogo';
 import styles from './Styles/Welcome.styles';
 
 const welcomeText =

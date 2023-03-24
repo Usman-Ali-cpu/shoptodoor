@@ -51,10 +51,57 @@ const styles = StyleSheet.create({
   stepHeaderText: {
     color: '#f6f6f6',
     fontSize: 24,
-    fontWeight: 'bold',
-    marginVertical: 12,
   },
   // step container
+
+  // header navigation
+  headerNavContainer: {
+    alignItems: 'center',
+    height: '8%',
+    justifyContent: 'center',
+    width: '100%',
+  },
+  headerNav: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    height: '100%',
+    justifyContent: 'space-between',
+    width: '95%',
+  },
+  headerNavLeft: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    height: '100%',
+    justifyContent: 'flex-start',
+    width: '50%',
+  },
+  headerNavRight: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    height: '100%',
+    justifyContent: 'flex-end',
+    width: '50%',
+  },
+  headerNavLeftBtn: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    height: '100%',
+  },
+  headerNavLeftBackBtnText: {
+    color: '#f6f6f6',
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginHorizontal: 12,
+  },
+  headerNavRightLogo: {
+    height: '100%',
+    width: '100%',
+    alignItems: 'flex-end',
+    justifyContent: 'center',
+    marginEnd: -18,
+  },
+
+  // header navigation
 });
 
 export default styles;

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     borderColor: '#fff',
   },
   btnText: {
-    color: 'f6f6f6',
+    color: 'white',
     fontWeight: 'bold',
     fontSize: 18,
   },

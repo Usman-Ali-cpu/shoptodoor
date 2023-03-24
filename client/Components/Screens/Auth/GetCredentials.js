@@ -3,11 +3,14 @@ import {useState} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 
-import styles from './GetCredentials.styles';
-import SvgImage from './logoWhite.svg';
+// import assets
+import styles from './Styles/GetCredentials.styles';
+
+// import components
 import HeaderTextAuthScreens from '../../Molecules/HeaderTextAuthScreens';
 import STDInput from '../../Atoms/STDInput';
 import OTPScreen from './OTPScreen';
+import HeaderNav from '../../Molecules/HeaderNav';
 
 /**
  * @param {Object} route
@@ -53,16 +56,7 @@ const GetCredentials = ({route, navigation}) => {
 
   return (
     <View style={[styles.container]}>
-      <View style={styles.headerContainer}>
-        <View style={styles.backNavContainer}>
-          <TouchableOpacity style={styles.backNav}>
-            <Text style={styles.backNavText}>Back</Text>
-          </TouchableOpacity>
-        </View>
-        <View style={styles.logoContainer}>
-          <SvgImage />
-        </View>
-      </View>
+      <HeaderNav />
       <View style={styles.bottomContent}>
         <HeaderTextAuthScreens stepNo={stepNo} />
         <View style={styles.credContainer}>
@@ -110,8 +104,8 @@ const GetCredentials = ({route, navigation}) => {
 };
 
 GetCredentials.propTypes = {
-  route: Object,
-  navigation: Object,
+  route: PropTypes.instanceOf(Object),
+  navigation: PropTypes.object || PropTypes.func || PropTypes.any,
 };
 
 const Auth = ({navigation, step, isEnabled, callback}) => {

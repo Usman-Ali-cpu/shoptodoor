@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     width: '90%',
   },
   text: {
-    color: '#f6f6f6',
+    color: 'white',
     fontSize: 18,
     textAlign: 'justify',
     fontWeight: '400',
@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     alignItems: 'center',
-    borderColor: 'blue',
     justifyContent: 'flex-end',
     width: '100%',
   },

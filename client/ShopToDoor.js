@@ -6,21 +6,21 @@ import GetCredentials from './Components/Screens/Auth/GetCredentials';
 import {Toast} from 'react-native-toast-message/lib/src/Toast';
 import {View, Text} from 'react-native';
 
+
 const isInternetConnected = () => true;
 
 const Stack = createNativeStackNavigator();
+
+/**
+ * @return{JSX.Element} App, a component that renders the app
+ */
 const App = () => {
   return (
     <>
       {isInternetConnected() ? (
         <NavigationContainer>
           <Stack.Navigator>
-            <Stack.Screen
-              name="Welcome"
-              component={Welcome}
-              options={{headerShown: false}}
-              animation="fade"
-            />
+            <Stack.Screen name="Welcome" component={Welcome} options={{headerShown: false}} animation="fade" />
             <Stack.Screen
               name="GetCredentials"
               component={GetCredentials}
