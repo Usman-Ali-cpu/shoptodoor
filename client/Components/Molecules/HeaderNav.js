@@ -1,28 +1,32 @@
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import React from 'react';
-import SVGImg from '../../assets/icons/LogoWhite.svg';
+import Logo from '../../assets/icons/LogoRW.svg';
+import BackBtn from '../../assets/icons/BackWhiteIcon.svg';
 import styles from './Styles/Molecules.styles';
+import PropTypes from 'prop-types';
 
-const HeaderNav = () => {
+/**
+ *
+ * @return {JSX.Element} HeaderNav, a component that renders the header navigation
+ */
+const HeaderNav = ({navigation}) => {
   return (
     <View style={styles.headerNavContainer}>
       <View style={styles.headerNav}>
         <View style={styles.headerNavLeft}>
-          {/* back button */}
-          <View style={styles.headerNavLeftBackBtn}>
-            <Text style={styles.headerNavLeftBackBtnText}>Back</Text>
-          </View>
+          <BackBtn height={35} onPress={() => navigation.goBack()} />
         </View>
 
         <View style={styles.headerNavRight}>
-          {/* logo */}
-          <View style={styles.headerNavRightLogo}>
-            <SVGImg height={35} />
-          </View>
+          <Logo height={33} />
         </View>
       </View>
     </View>
   );
+};
+
+HeaderNav.propTypes = {
+  navigation: PropTypes.object,
 };
 
 export default HeaderNav;

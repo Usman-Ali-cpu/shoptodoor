@@ -11,6 +11,8 @@ import PropTypes from 'prop-types';
  * @return {JSX.Element} STDInput, a component that renders the standard input for the auth screens
  */
 const STDInput = ({placeholder, type, cb}) => {
+  const [style, setStyle] = React.useState(styles.input);
+
   const handleName = (text) => {
     if (text.length >= 3) {
       cb(text);
@@ -56,12 +58,13 @@ const STDInput = ({placeholder, type, cb}) => {
   return (
     <View style={styles.inputContainer}>
       <TextInput
-        style={styles.input}
+        style={style}
         placeholder={placeholder}
-        placeholderTextColor="#454545"
+        placeholderTextColor="#404040"
         keyboardType={type === 'number' ? 'numeric' : 'default'}
         maxLength={type === 'number' ? 11 : 20}
         onChangeText={type === 'number' ? handlePhoneNumberInput : handleName}
+        onFocus={() => setStyle(styles.inputFocused)}
       />
     </View>
   );

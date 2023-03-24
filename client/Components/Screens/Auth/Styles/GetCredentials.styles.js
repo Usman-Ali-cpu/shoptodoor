@@ -4,12 +4,12 @@ const styles = StyleSheet.create({
   bottomContent: {
     alignItems: 'center',
     justifyContent: 'space-between',
-    height: '70%',
+    height: '92%',
     width: '90%',
   },
   btn: {
     alignItems: 'center',
-    borderRadius: 50,
+    borderRadius: 5,
     height: 48,
     justifyContent: 'center',
     width: '100%',
@@ -64,10 +64,10 @@ const styles = StyleSheet.create({
 
   inputContainer: {
     alignItems: 'center',
-    borderRadius: 4,
+    borderRadius: 5,
     height: 56,
     justifyContent: 'center',
-    marginBottom: 12,
+    marginVertical: 12,
     width: '100%',
   },
   otpContainer: {
@@ -149,6 +149,7 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     textAlign: 'justify',
     width: '100%',
+    marginTop: 4,
   },
   textBold: {
     fontWeight: 'bold',
@@ -170,17 +171,23 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '100%',
   },
+
   OTPScreenText1: {
     color: '#f6f6f6',
     fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 10,
+    fontWeight: '700',
+    marginBottom: 4,
+    textTransform: 'uppercase',
+    color: '#A21D21',
   },
   OTPScreenText2: {
     color: '#f6f6f6',
     fontSize: 16,
     textAlign: 'center',
     fontWeight: 'normal',
+    marginBottom: 8,
+    lineHeight: 24,
+    fontWeight: '300',
   },
 
   // Header

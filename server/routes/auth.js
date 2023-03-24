@@ -9,7 +9,7 @@ const authToken = twilioConfig.authToken;
 
 const twilioClient = twilio(accountSid, authToken);
 
-export const loginTwilio = (req, res) => {
+export const requestOTP = (req, res) => {
   // request phone number and channel will be sms for default
   let { number, channel } = req.query;
   number = "+92" + number.slice(1);
@@ -31,7 +31,7 @@ export const loginTwilio = (req, res) => {
   res.send("ok");
 };
 
-export const verifyTwilio = (req, res) => {
+export const verifyOTP = (req, res) => {
   // request phone number and code
   let { number, code } = req.query;
   number = "+92" + number.slice(1);

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {View, TextInput} from 'react-native';
 import {useRef, useState} from 'react';
 
-import styles from '../../Compounds/Styles/Compounds.styles';
+import styles from './Styles/Compounds.styles';
 
 /**
  * @param {Function} cb

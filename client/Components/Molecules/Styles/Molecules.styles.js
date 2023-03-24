@@ -40,17 +40,21 @@ const styles = StyleSheet.create({
   // step container
   stepContainer: {
     alignItems: 'center',
-    height: '20%',
+    height: '10%',
     justifyContent: 'center',
     width: '100%',
   },
+
   stepHeader: {
     flexDirection: 'row',
     width: '100%',
   },
+
   stepHeaderText: {
     color: '#f6f6f6',
     fontSize: 24,
+    fontWeight: '800',
+    paddingVertical: 10,
   },
   // step container
 
@@ -66,7 +70,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: '100%',
     justifyContent: 'space-between',
-    width: '95%',
+    width: '90%',
   },
   headerNavLeft: {
     alignItems: 'center',
@@ -98,7 +102,6 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'flex-end',
     justifyContent: 'center',
-    marginEnd: -18,
   },
 
   // header navigation

@@ -13,9 +13,10 @@ app.use(urlencoded({ extended: true }));
 
 // twilio auth
 
-import { login, loginTwilio, register, verifyTwilio } from "./routes/auth.js";
-app.get("/api/auth/requestOTP", loginTwilio);
-app.get("/verifyTwilio", verifyTwilio);
+import { login, requestOTP, register, verifyOTP } from "./routes/auth.js";
+app.get("api/v1/auth/requestOTP", requestOTP);
+app.get("api/v1/auth/verifyOTP", verifyOTP);
+
 // Register
 app.post("/register", register);
 

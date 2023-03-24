@@ -47,23 +47,36 @@ const styles = StyleSheet.create({
   // Lines <horizontal>
 
   // STDInput
+  inputContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    marginVertical: 4,
+  },
   input: {
     color: '#f6f6f6',
     fontSize: 18,
     fontWeight: '400',
     width: '100%',
     paddingHorizontal: 12,
-    paddingVertical: 8,
-  },
-  inputContainer: {
-    alignItems: 'center',
+    paddingVertical: 6,
     borderColor: '#f6f6f6',
     borderWidth: 2,
-    borderRadius: 4,
+    borderRadius: 5,
     height: 56,
-    justifyContent: 'center',
-    marginBottom: 12,
+  },
+  // when active
+  inputFocused: {
+    color: '#f6f6f6',
+    fontSize: 18,
+    fontWeight: '400',
     width: '100%',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderColor: '#A21D21',
+    borderWidth: 2,
+    borderRadius: 5,
+    height: 56,
   },
   // STDInput
 });
